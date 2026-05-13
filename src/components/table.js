@@ -30,8 +30,8 @@ export function initTable(settings, onAction) {
 
   root.container.addEventListener('reset', () => {
     setTimeout(() => {
-console.log('задержка')
-    }, 1000)
+        onAction();
+    })
   });
 
   root.container.addEventListener('submit', (e) => {
